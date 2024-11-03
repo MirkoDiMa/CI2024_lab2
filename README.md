@@ -32,9 +32,9 @@ The Genetic Algorithm (GA) is a stochastic optimization technique that evolves a
 5. **Survivor Selection**: The population is reduced to the original size, preserving the best individuals.
 
 **Parameters**:
-- **Population Size**: 300
-- **Generations**: 1000
-- **Offspring Size**: 30
+- **Population Size**: 150
+- **Generations**: 2000
+- **Offspring Size**: 50
 
 ### Greedy Algorithm
 The Greedy Algorithm is a simpler heuristic that constructs a solution iteratively:
@@ -56,13 +56,13 @@ The table below compares the results of the Genetic Algorithm and the Greedy Alg
 
 | Dataset             | Genetic Algorithm - Best Distance (km) | Generation Found | Greedy Algorithm - Distance (km) | Steps |
 |---------------------|----------------------------------------|------------------|-----------------------------------|-------|
-| `cities/italy.csv`  | 5645.84                               | 996              | 4436.03                           | 46    |
-| `cities/vanuatu.csv`| 1345.54                               | 113              | 1475.53                           | 8     |
-| `cities/russia.csv` | 144937.52                             | 996              | 42334.16                          | 167   |
-| `cities/us.csv`     | 343287.60                             | 991              | 48050.03                          | 326   |
-| `cities/china.csv`  | 690749.41                             | 983              | 63962.92                          | 726   |
+| `cities/italy.csv`  | 5488.39                               | 1348              | 4436.03                           | 46    |
+| `cities/vanuatu.csv`| 1345.54                               | 37              | 1475.53                           | 8     |
+| `cities/russia.csv` | 89593.53                             | 1999              | 42334.16                          | 167   |
+| `cities/us.csv`     | 199003.50                             | 1996              | 48050.03                          | 326   |
+| `cities/china.csv`  | 422333.27                             | 1995              | 63962.92                          | 726   |
 
 ### Observations
-- The Genetic Algorithm generally takes longer to find the best solution, with convergence often close to the maximum number of generations (1000).
+- The Genetic Algorithm generally takes longer to find the best solution, with convergence often close to the maximum number of generations (2000).
 - The Greedy Algorithm produces solutions quickly but with higher total distances, indicating that it provides suboptimal results as expected.
 - The Genetic Algorithm consistently finds shorter paths than the Greedy Algorithm, albeit with greater computational cost.
